@@ -1,0 +1,12 @@
+{
+
+"name" : "Proyecto_Inmobiliaria",
+"version" : "0.0.1",
+"description" : "Pagina de Inmbobiliaria",
+"main"        :  "server.js",
+"author"      :  "Rodrigo",
+"dependencies" : {
+    "express"  : "~3.4.4",
+    "mongoose" : "~3.6.2"
+}
+}
