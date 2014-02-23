@@ -35,3 +35,10 @@ div.jumbotron > div.form-group{
 body{
     font-family: 'Montserrat Alternates';
 }
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+    font-size: 150px;
+font-style: normal;
+margin-left: 100px;
+}
