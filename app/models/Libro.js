@@ -7,6 +7,19 @@ exports.modelo  = new mongoose.Schema({
     autor : {
         type : String,
         required : true
-    }
+    },
+    biblioteca : {
+    	type: String,
+    	required : true
+    },
+    editorial : {
+    	type: String,
+    	required: true
+    },
+    temas : {
+        	type: String,
+        required : true
+        	
+        }
     
 });

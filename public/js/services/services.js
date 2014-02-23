@@ -3,7 +3,7 @@ angular.module('appService', [])
 .factory('Apps', function($http){
     return{
         get : function() {
-            return $http.get('/');
+            return $http.get('/libros');
         },
         create : function(data) {
             return $http.post('/', data);

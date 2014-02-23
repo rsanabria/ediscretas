@@ -1,7 +1,7 @@
 //Configuración Inicial
 var express = require('express');
 var app     = express(); 
-var port    = process.env.PORT || 8080;
+var port    = process.env.PORT || 8000;
 var routes  = require('./app/routes/rutas'); 
 var db      = require('./app/database');
 
@@ -15,9 +15,9 @@ app.configure( function () {
 });
 
 //Aqui van tus modelos
-
+var Libro = db.modelo;
 //Carga las rutas
-routes(app);
+routes(app, Libro);
 
 //Inicio de la app con el servidor node server.js
 app.listen(port);

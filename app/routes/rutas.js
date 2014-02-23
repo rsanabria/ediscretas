@@ -1,15 +1,18 @@
 
-module.exports = function(app){
+module.exports = function(app, Libro){
     
-    app.get('/', function(req, res){
+    app.get('/libros', function(req, res){
         console.log('Método Get')
-    res.sendfile('./views/index.html');
+     		Libro.find({},{"titulo": 1, "autor":1, "biblioteca":1, "editorial":1, "temas":1 , "_id":0}, function(err,libros){
+					 if(err)
+						res.send(err);
+		res.json(libros);
+		
+		 
+					 });
     
         });
     
-    app.post('/', function (req, res){
-        console.log('Método Post ')    
-    });
     
     
 }
