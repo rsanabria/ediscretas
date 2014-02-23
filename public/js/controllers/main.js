@@ -2,7 +2,9 @@ angular.module('appController', [])
     .controller('mainController', function ($scope, $http,Libros,filterFilter){
         //$scope.formData = {};
         $scope.isCollapsed =true;
-
+ $scope.alerts = [
+    { type: 'danger', msg: "No se Encontraron Libros" }];
+    
         
        Libros.get();
  
