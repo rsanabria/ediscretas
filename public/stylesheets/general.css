@@ -29,7 +29,9 @@ div.jumbotron > div.form-group{
     position: relative;
     left: 45%;
 }
-
+.table {
+     font-family: 'Montserrat Alternates';
+}
 body{
     font-family: 'Montserrat Alternates';
 }
