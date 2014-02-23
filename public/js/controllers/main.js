@@ -26,7 +26,7 @@ angular.module('appController', [])
             .success(function(data){
                 $scope.formData= {};
                 $scope.libros = data;
-				
+				$scope.msj = "Libro guardado";
             });
         };
     

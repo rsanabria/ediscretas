@@ -9,8 +9,10 @@
     
     <title>Estrucutas Discretas</title>
     <!--Scrolls -->
+     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href='stylesheets/general.css'> <!-- Tú CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+   
     <style>
         html       {overflow-y:scroll;}
         body       {padding-top:50px;}
@@ -37,22 +39,7 @@
 
             </div>
         <div  >
-            <table  ng-show= "b">
-            <tr>
-                <th>Titulo</th>
-                <th>Autor</th>
-                <th>Editorial</th>
-                <th>Temas</th>
-                <th>Biblioteca</th>
-                </tr>
-                <tr ng-repeat="libro in libros | filter:q" >
-                <td>{{libro.titulo}}</td>
-                <td>{{libro.autor}}</td>
-                <td>{{libro.editorial}}</td>
-                <td>{{libro.temas.uno}}</td>
-                <td>{{libro.biblioteca}}</td>
-                </tr>
-            </table>
+            
         
         </div>
     </body>

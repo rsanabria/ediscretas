@@ -1,0 +1,35 @@
+div.jumbotron > h1{
+    font-family: 'Josefin Sans',bold;
+    color:#5FB404;
+    position: relative;
+    left: 25%;
+}
+
+div.jumbotron {
+      font-family: 'Montserrat Alternates';
+background-color: #A63652;
+}
+div.jumbotron > h1{
+    
+    font-family: 'Josefin Sans',bold;
+    color: #74DF00;
+    position: relative;
+    left: 25%;
+}
+div.jumbotron > div.form-group{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    text-align: center;
+}
+ div.form-group > .form-control{
+    text-align: center;
+}
+ a.btn.btn-primary.btn-lg {
+    position: relative;
+    left: 45%;
+}
+
+body{
+    font-family: 'Montserrat Alternates';
+}

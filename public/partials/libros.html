@@ -1,5 +1,6 @@
         <div class="container">
                <div class="jumbotron">
+                   
   <h1>Estructuras Discretas</h1>
                    <div class="form-group">
  
@@ -10,16 +11,24 @@
             </div>
 <div ng-if="libros.length == 0">
 <h4>No se encontraron libros </h4></div>
-  <div ng-if="libros.length != 0">        
-       <table  ng-show= "b">
+  <div ng-if="libros.length != 0">   
+      <div class="container">
+       
+       <table class="table table-striped table-hover" ng-show= "b">
+          
+              
             <tr>
+                <th>N</th>
                 <th>Titulo</th>
-                <th>Autor</th>
+              <th>Autor</th>
                 <th>Editorial</th>
                 <th>Temas</th>
                 <th>Biblioteca</th>
                 </tr>
+                  
+          
                 <tr ng-repeat="libro in libros" >
+                <td>{{$index + 1}}</td>
                 <td>{{libro.titulo}}</td>
                 <td>{{libro.autor}}</td>
                 <td>{{libro.editorial}}</td>
@@ -27,4 +36,6 @@
                 <td>{{libro.biblioteca}}</td>
                 </tr>
             </table>
-      </div>
+         
+     
+      
