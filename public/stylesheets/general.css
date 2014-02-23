@@ -35,6 +35,29 @@ div.jumbotron > div.form-group{
 body{
     font-family: 'Montserrat Alternates';
 }
+.inst{
+margin-bottom: -4%;
+}
+.inst > button{
+    color:white;
+    background-color: transparent;
+    border-color: transparent;
+
+}
+.inst > a:hover{
+    color:#5FB404;
+    text-decoration: none;
+
+}
+div.well.well-lg {
+    font-size: 70%;
+}
+div.well.well-lg> p{
+    color: #A63652;
+
+}
+
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
@@ -42,3 +65,4 @@ body{
 font-style: normal;
 margin-left: 100px;
 }
+

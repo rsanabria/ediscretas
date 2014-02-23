@@ -7,6 +7,24 @@
     <input type="text" ng-model="q" class="form-control"  placeholder="Busca tu Libro!" >
   </div>
   <p><a class="btn btn-primary btn-lg" role="button" ng-click="Buscar()">Buscar</a></p>
+                   
+                   
+<div class="inst">
+	<button ng-click="Collapse()">¿Cómo Buscar?</button>
+    <button ng-click="Integrantes()"  style="margin-left:63%;">Integrantes</button>
+	
+	<div collapse="isCollapsed">
+		<div class="well well-lg"><p>{{contenido[0]}}<i style="margin-left:67%;">{{contenido[1]}}</i></p>
+            {{contenido2[0]}}<i style="margin-left:57%;">{{contenido2[1]}}</i>
+            <p>{{contenido3[0]}}<i style="margin-left:63%;">{{contenido3[1]}}</i></p>
+             {{contenido4[0]}}<i style="margin-left:63%;">{{contenido4[1]}}</i>
+            <br>
+            <button class= "btn btn-default" ng-click="isCollapsed = !isCollapsed">Entendido</button>
+        </div> 
+	</div>
+</div>
+
+
 </div>
             </div>
 <div ng-if="libros.length == 0">

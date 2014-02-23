@@ -1,4 +1,4 @@
-var newApp = angular.module('newApp',['appController','appService','ngRoute']);
+var newApp = angular.module('newApp',['appController','appService','ngRoute','ui.bootstrap']);
 
 newApp.config(['$routeProvider',
 function($routeProvider) {
