@@ -17,7 +17,7 @@
     </style>
     <!-- SPELLS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+<script src="js/vendor/angular/angular.min.js"></script><!-- load angular -->
     <script src="/js/controllers/main.js"></script><!-- carga el  controladores principal -->
     <script src="/js/services/services.js"></script><!--carga el servicio(...) -->
     <script src="/js/core.js"></script> <!-- load our main app -->
@@ -33,8 +33,10 @@
   </div>
   <p><a class="btn btn-primary btn-lg" role="button" ng-click="Buscar()">Buscar</a></p>
 </div>
-
             </div>
+<div ng-if="libros.length == 0">
+<h4>No se encontraron libros </h4></div>
+            
        <table  ng-show= "b">
             <tr>
                 <th>Titulo</th>
