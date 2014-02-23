@@ -1,0 +1,30 @@
+        <div class="container">
+               <div class="jumbotron">
+  <h1>Estructuras Discretas</h1>
+                   <div class="form-group">
+ 
+    <input type="text" ng-model="q" class="form-control"  placeholder="Busca tu Libro!" >
+  </div>
+  <p><a class="btn btn-primary btn-lg" role="button" ng-click="Buscar()">Buscar</a></p>
+</div>
+            </div>
+<div ng-if="libros.length == 0">
+<h4>No se encontraron libros </h4></div>
+  <div ng-if="libros.length != 0">        
+       <table  ng-show= "b">
+            <tr>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Editorial</th>
+                <th>Temas</th>
+                <th>Biblioteca</th>
+                </tr>
+                <tr ng-repeat="libro in libros" >
+                <td>{{libro.titulo}}</td>
+                <td>{{libro.autor}}</td>
+                <td>{{libro.editorial}}</td>
+                <td>{{libro.temas}}</td>
+                <td>{{libro.biblioteca}}</td>
+                </tr>
+            </table>
+      </div>

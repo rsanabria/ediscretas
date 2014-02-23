@@ -12,8 +12,20 @@ module.exports = function(app, Libro){
 					 });
     
         });
+    app.get('/agregar', function(req, res){
+        console.log('Get agregar');
     
+
+        });
     
+        app.post('/agregar', function ( req, res){
+        console.log('Post');
+        var libro = new Libro(req.body);
+        libro.save( function(error, libro){
+            res.json({libros : libro});
+			
+        });
+        });
     
 }
    

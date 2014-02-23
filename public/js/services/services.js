@@ -1,16 +1,22 @@
 angular.module('appService', [])
 
-.factory('Apps', function($http){
+.factory('Libros', function($http){
     return{
         get : function() {
             return $http.get('/libros');
+        }
+        
+
+    }
+})
+.factory('Agregar', function($http){
+    return {
+        get: function(){
+            return $http.get('/agregar');
         },
         create : function(data) {
-            return $http.post('/', data);
-        } ,
-        delete : function(id) {
-            return $http.delete('/' + id);
-    }
-
+            return $http.post('/agregar', data);
+        }
+        
     }
 });
