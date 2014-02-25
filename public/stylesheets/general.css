@@ -66,3 +66,14 @@ font-style: normal;
 margin-left: 100px;
 }
 
+.navbar.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+}
+nav.navbar-default .navbar-nav > li > a {
+    color: white;
+    margin-left: 35%;
+}
+nav.navbar-default .navbar-nav > li > a:hover {
+    color:#5FB404;
+}

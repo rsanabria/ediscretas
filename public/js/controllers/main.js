@@ -29,6 +29,9 @@ angular.module('appController', [])
             $scope.contenido = ["Ramírez Sánchez Juan", " N.L 31"];
             $scope.contenido2 = ["Sanabria del Campo Carlos Rodrigo", "N.l. 37"];
             $scope.contenido3 = ["Varela González Víctor Hugo", "N.l. 44"];
+            $scope.contenido4 = [];
+            $scope.contenido5 = [];
+            $scope.contenido6 = [];
         };
         
         $scope.Nomen = function () {
@@ -37,6 +40,9 @@ angular.module('appController', [])
             $scope.contenido2 = ["EP", "Posgrado- Enzo Levi"];
             $scope.contenido3 = ["BP", "Principal - Antonio Duval Jaime"];
             $scope.contenido4 = ["DCB", "Anexo - Enrique Rivero Borrell "]
+            $scope.contenido4 = [];
+            $scope.contenido5 = [];
+            $scope.contenido6 = [];
         }
     
     })

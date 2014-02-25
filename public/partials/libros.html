@@ -8,13 +8,16 @@
     <input type="text" ng-model="q" class="form-control"  placeholder="Busca tu Libro!" >
   </div>
   <p><a class="btn btn-primary btn-lg" role="button" ng-click="Buscar()">Buscar</a></p>
-                   
-                   
+                                      
 <div class="inst">
-	<button ng-click="Collapse()">¿Cómo Buscar?</button>
-     <button ng-click="Nomen()"  style="margin-left:20%;">Nomenclatura</button>
-    <button ng-click="Integrantes()"  style="margin-left:23%;">Integrantes</button>
-       
+    <nav class = "navbar navbar-default" role = "navigation" id = "menu">
+     <ul id = "categorias" class="nav navbar-nav">
+    <li ><a ng-click="Collapse()">¿Cómo Buscar?</a></li>
+	
+     <li><a ng-click="Nomen()">Nomenclatura</a></li>
+    <li><a ng-click="Integrantes()">Integrantes</a></li>
+       </ul>
+        </nav>
 	
 	<div collapse="isCollapsed">
 		<div class="well well-lg"><i style="color:#A63652;">{{contenido[0]}}</i><i style="margin-left:67%; color:#A63652;">{{contenido[1]}}</i>
@@ -31,12 +34,13 @@
             <br>
             <button class= "btn btn-default" ng-click="isCollapsed = !isCollapsed">Entendido</button>
         </div> 
+        </div>
 	</div>
 </div>
 
 
 </div>
-            </div>
+           
 <div ng-if="libros.length == 0">
     
 
@@ -47,7 +51,7 @@
 </div>
   <div ng-if="libros.length != 0">   
       <div class="container">
-       
+       <div class="table-responsive">
        <table class="table table-striped table-hover" ng-show= "b">
           
               
@@ -70,6 +74,7 @@
                 <td>{{libro.biblioteca}}</td>
                 </tr>
             </table>
+           </div>
          </div>
       </div>
      
