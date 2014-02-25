@@ -6,6 +6,7 @@ angular.module('appController', [])
         $scope.closeAlert = function(index) {
     $scope.alerts.splice(index, 1);
   };
+        $scope.orderProp = "titulo";
         Libros.get();
  
         $scope.Buscar = function () {
