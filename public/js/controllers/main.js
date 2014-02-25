@@ -31,9 +31,9 @@ angular.module('appController', [])
             $scope.isCollapsed = false;
             $scope.contenido = ["Ramírez Sánchez Juan", " N.L 31"];
             $scope.contenido2 = ["Sanabria del Campo Carlos Rodrigo", "N.l. 37"];
-            $scope.contenido3 = ["Varela González Víctor Hugo", "N.l. 44"];
-            $scope.contenido4 = [];
-            $scope.contenido5 = [];
+            $scope.contenido3 = ["Rubi Carolina Trejo Mercado", "NL: 41"];
+            $scope.contenido4 = [" Valle Juarez Pedro Angel", "NL: 43"];
+            $scope.contenido5 = ["Varela González Víctor Hugo", "N.L. 44"];                        
             $scope.contenido6 = [];
         };
         
