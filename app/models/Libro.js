@@ -12,6 +12,10 @@ exports.modelo  = new mongoose.Schema({
     	type: String,
     	required : true
     },
+    codigo : {
+        type : String,
+        required : true
+    },
     editorial : {
     	type: String,
     	required: true

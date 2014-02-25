@@ -1,9 +1,9 @@
 
-module.exports = function(app, Libro){
+module.exports = function (app, Libro) {
     
-    app.get('/libros', function(req, res){
-        console.log('Método Get')
-     		Libro.find({},{"titulo": 1, "autor":1, "biblioteca":1, "editorial":1, "temas":1, "tema":1, "_id":0}, function(err,libros){
+    app.get('/libros', function (req, res) {
+        console.log("Get index");
+     		Libro.find({},{"titulo": 1, "autor":1, "biblioteca":1, "codigo":1, "editorial":1, "temas":1, "tema":1, "_id":0}, function(err,libros){
 					 if(err)
 						res.send(err);
 		res.json(libros);
@@ -12,7 +12,7 @@ module.exports = function(app, Libro){
 					 });
     
         });
-    app.get('/agregar', function(req, res){
+    app.get('/agregar', function (req, res) {
         console.log('Get agregar');
     
 

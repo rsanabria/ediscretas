@@ -3,7 +3,9 @@ angular.module('appController', [])
         $scope.isCollapsed = true;
         $scope.alerts = [
             { type: 'danger', msg: "No se Encontraron Libros" }];
-        
+        $scope.closeAlert = function(index) {
+    $scope.alerts.splice(index, 1);
+  };
         Libros.get();
  
         $scope.Buscar = function () {
@@ -74,6 +76,8 @@ angular.module('appController', [])
                 });
         };
 
-    
+    $scope.closeAlert = function(index) {
+    $scope.alerts.splice(index, 1);
+  };
     });
 

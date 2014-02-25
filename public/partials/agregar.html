@@ -1,6 +1,6 @@
 <h1> Agregar Libro</h1>
 
-<form>
+<form style="text-align: center;width:60%;left:20%;position:relative;">
 <label>Titulo</label>
 <input  type="text" required class="form-control input-lg text-center" placeholder="..."  ng-model="formData.titulo">
 <label>Autor</label>
@@ -9,6 +9,8 @@
 <input  type="text" required class="form-control input-lg text-center" placeholder="..."  ng-model="formData.editorial">
 <label>Biblioteca</label>
 <input  type="text" required class="form-control input-lg text-center" placeholder="..."  ng-model="formData.biblioteca">
+<label>Código</label>
+<input  type="text" required class="form-control input-lg text-center" placeholder="..."  ng-model="formData.codigo">
 <label>Temas</label>
 <input  type="text" required class="form-control input-lg text-center" placeholder="..."  ng-model="formData.tema">    
 <button type="submit" class="btn btn-primary btn-lg" ng-click="crearLibro()"> Agregar </button>
