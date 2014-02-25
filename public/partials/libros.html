@@ -2,7 +2,7 @@
                <div class="jumbotron">
                    
   <h1>Estructuras Discretas</h1>
-                   <div class = ".visible-md" style ="position:absolute; top: -1%; left: 6%; color: #428BCA;"> <i class=" flaticon-line17"></i>  </div> 
+<!--                   <div class = ".visible-md" style ="position:absolute; top: -1%; left: 6%; color: #428BCA;"> <i class=" flaticon-line17"></i>  </div> -->
                    <div class="form-group">
  
     <input type="text" ng-model="q" class="form-control"  placeholder="Busca tu Libro!" >
@@ -12,13 +12,22 @@
                    
 <div class="inst">
 	<button ng-click="Collapse()">¿Cómo Buscar?</button>
-    <button ng-click="Integrantes()"  style="margin-left:63%;">Integrantes</button>
+     <button ng-click="Nomen()"  style="margin-left:20%;">Nomenclatura</button>
+    <button ng-click="Integrantes()"  style="margin-left:23%;">Integrantes</button>
+       
 	
 	<div collapse="isCollapsed">
-		<div class="well well-lg"><p>{{contenido[0]}}<i style="margin-left:67%;">{{contenido[1]}}</i></p>
+		<div class="well well-lg"><i style="color:#A63652;">{{contenido[0]}}</i><i style="margin-left:67%; color:#A63652;">{{contenido[1]}}</i>
+            <br>
             {{contenido2[0]}}<i style="margin-left:57%;">{{contenido2[1]}}</i>
-            <p>{{contenido3[0]}}<i style="margin-left:63%;">{{contenido3[1]}}</i></p>
+            <br>
+            <i style="color:#A63652;">{{contenido3[0]}}</i><i style="margin-left:63%; color:#A63652;">{{contenido3[1]}}</i>
+            <br>
              {{contenido4[0]}}<i style="margin-left:63%;">{{contenido4[1]}}</i>
+           <br>
+             <i style="color:#A63652;">{{contenido5[0]}}</i><i style="margin-left:63%; color:#A63652;">{{contenido5[1]}}</i>
+            
+             {{contenido6[0]}}<i style="margin-left:63%;">{{contenido6[1]}}</i>
             <br>
             <button class= "btn btn-default" ng-click="isCollapsed = !isCollapsed">Entendido</button>
         </div> 

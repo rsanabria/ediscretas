@@ -21,6 +21,8 @@ angular.module('appController', [])
             $scope.contenido2 = ["Ejemplo: Teoría de Grafos", ""];
             $scope.contenido3 = [" Si tu libro tiene más de un autor, o múltiples temas, separa cada elemento por un espacio", ""];
             $scope.contenido4 = ["Ejemplo : 1 2 3", ""];
+            $scope.contenido5 = ["Busca por temas Generales no Específicos"];
+            $scope.contenido6 = ["Ejemplo :  2 3 4 , no 2.3 3.4 5.5"];
         };
         $scope.Integrantes = function () {
             $scope.isCollapsed = false;
@@ -28,6 +30,14 @@ angular.module('appController', [])
             $scope.contenido2 = ["Sanabria del Campo Carlos Rodrigo", "N.l. 37"];
             $scope.contenido3 = ["Varela González Víctor Hugo", "N.l. 44"];
         };
+        
+        $scope.Nomen = function () {
+            $scope.isCollapsed = false;
+            $scope.contenido = ["BC", "Biblioteca Central"];
+            $scope.contenido2 = ["EP", "Posgrado- Enzo Levi"];
+            $scope.contenido3 = ["BP", "Principal - Antonio Duval Jaime"];
+            $scope.contenido4 = ["DCB", "Anexo - Enrique Rivero Borrell "]
+        }
     
     })
     .controller('agregarController', function ($scope, Agregar) {
@@ -35,14 +45,11 @@ angular.module('appController', [])
         $scope.formData.temas = [];
         var temas, t;
         $scope.i = 0;
-        t = [];
-        t.push($scope.i);
-        $scope.t = t;
-    
-    
+        $scope.alerts = []; 
         Agregar.get();
        
         $scope.crearLibro = function () {
+            
             temas  = $scope.formData.tema;
             $scope.formData.tema = "";
             temas = temas.split(" ");
@@ -53,15 +60,12 @@ angular.module('appController', [])
 		    if ($scope.formData)
             Agregar.create($scope.formData)
                 .success(function (data) {
+                    $scope.alerts = [
+            { type: 'success', msg: "Libro Añadido" }]; 
                     $scope.formData = {};
                     //$scope.libros = data;
 				    $scope.msj = "Libro guardado";
                 });
-        };
-    
-        $scope.agregarTema = function () {
-            $scope.i++;
-            $scope.t.push($scope.i);
         };
 
     
