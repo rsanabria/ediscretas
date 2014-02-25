@@ -57,7 +57,7 @@
                 <td>{{libro.titulo}}</td>
                 <td>{{libro.autor}}</td>
                 <td>{{libro.editorial}}</td>
-                <td>{{libro.temas}}</td>
+                <td ><i ng-repeat="t in libro.temas"><i ng-if="($index+1)%2 == 0">{{t}}&nbsp;&nbsp;</i><i ng-if="($index+1)%2 != 0" style="color:#A63652;">{{t}}&nbsp;&nbsp;</i><i ng-if="($index+1)%10==0"><br></i></i></td>
                 <td>{{libro.biblioteca}}</td>
                 </tr>
             </table>

@@ -20,7 +20,10 @@ module.exports = function(app, Libro){
     
         app.post('/agregar', function ( req, res){
         console.log('Post');
-        var libro = new Libro(req.body);
+            
+        console.log(req.body);
+
+        var libro = new Libro(req.body);        
         libro.save( function(error, libro){
             res.json({libros : libro});
 			
