@@ -8,13 +8,14 @@ div.jumbotron > h1{
 div.jumbotron {
       font-family: 'Montserrat Alternates';
 background-color: #A63652;
+    text-align: center;
 }
 div.jumbotron > h1{
     
     font-family: 'Josefin Sans',bold;
     color: #74DF00;
-    position: relative;
-    left: 25%;
+/*    position: relative;
+    left: 25%;*/
 }
 div.jumbotron > div.form-group{
     width: 50%;

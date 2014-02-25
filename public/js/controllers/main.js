@@ -31,7 +31,7 @@ angular.module('appController', [])
             $scope.isCollapsed = false;
             $scope.contenido = ["Ramírez Sánchez Juan", " N.L 31"];
             $scope.contenido2 = ["Sanabria del Campo Carlos Rodrigo", "N.l. 37"];
-            $scope.contenido3 = ["Rubi Carolina Trejo Mercado", "NL: 41"];
+            $scope.contenido3 = ["Trejo Mercado Rubi Carolina", "NL: 41"];
             $scope.contenido4 = [" Valle Juarez Pedro Angel", "NL: 43"];
             $scope.contenido5 = ["Varela González Víctor Hugo", "N.L. 44"];                        
             $scope.contenido6 = [];
@@ -39,10 +39,10 @@ angular.module('appController', [])
         
         $scope.Nomen = function () {
             $scope.isCollapsed = false;
-            $scope.contenido = ["BC", "Biblioteca Central"];
-            $scope.contenido2 = ["EP", "Posgrado- Enzo Levi"];
-            $scope.contenido3 = ["BP", "Principal - Antonio Duval Jaime"];
-            $scope.contenido4 = ["DCB", "Anexo - Enrique Rivero Borrell "]
+            $scope.contenido = ["BC-Biblioteca Central"];
+            $scope.contenido2 = ["EP-Posgrado- Enzo Levi"];
+            $scope.contenido3 = ["BP-Principal - Antonio Duval Jaime"];
+            $scope.contenido4 = ["DCB-Anexo - Enrique Rivero Borrell "]
             $scope.contenido4 = [];
             $scope.contenido5 = [];
             $scope.contenido6 = [];
