@@ -16,10 +16,10 @@ exports.modelo  = new mongoose.Schema({
     	type: String,
     	required: true
     },
-/*    tema : {
+    tema : {
     	type: String,
     	required: true
-    },*/
+    },
     temas : [String]
         	        
 });
