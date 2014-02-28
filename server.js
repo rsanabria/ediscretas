@@ -1,7 +1,7 @@
 //Configuración Inicial
 var express = require('express');
 var app     = express(); 
-var port    = process.env.PORT || 8000;
+var port    = process.env.PORT || 8050;
 var routes  = require('./app/routes/rutas'); 
 var db      = require('./app/database');
 

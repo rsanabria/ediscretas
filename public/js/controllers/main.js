@@ -64,6 +64,7 @@ angular.module('appController', [])
             temas = temas.split(" ");
             for (te in temas) {
                 $scope.formData.temas.push(temas[te]);
+		if (!(temas[te].split(".")[0] in $scope.formData.tema))
                 $scope.formData.tema = $scope.formData.tema + " " +temas[te].split(".")[0];
             }
 		    if ($scope.formData)
