@@ -60,19 +60,18 @@ angular.module('appController', [])
         $scope.crearLibro = function () {
             
             temas  = $scope.formData.tema;
-            $scope.formData.tema = "";
+            var tema = new String("");
             temas = temas.split(" ");
             for (te in temas) {
                 $scope.formData.temas.push(temas[te]);
-		if (!(temas[te].split(".")[0] in $scope.formData.tema))
-                $scope.formData.tema = $scope.formData.tema + " " +temas[te].split(".")[0];
+		if (!(temas[te].split(".")[0] in tema))
+                $scope.formData.tema = tema + " " +temas[te].split(".")[0];
             }
 		    if ($scope.formData)
             Agregar.create($scope.formData)
                 .success(function (data) {
                     $scope.alerts = [
             { type: 'success', msg: "Libro Añadido" }]; 
-                    $scope.formData.tem = "";
                     $scope.formData = {};
                     //$scope.libros = data;
 				    $scope.msj = "Libro guardado";
