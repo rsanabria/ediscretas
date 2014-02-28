@@ -25,10 +25,7 @@ div.jumbotron > div.form-group{
  div.form-group > .form-control{
     text-align: center;
 }
- a.btn.btn-primary.btn-lg {
-    position: relative;
-    left: 45%;
-}
+
 .table {
      font-family: 'Montserrat Alternates';
 }

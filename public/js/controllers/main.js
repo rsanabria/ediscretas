@@ -43,8 +43,8 @@ angular.module('appController', [])
             $scope.contenido2 = ["EP-Posgrado- Enzo Levi"];
             $scope.contenido3 = ["BP-Principal - Antonio Duval Jaime"];
             $scope.contenido4 = ["DCB-Anexo - Enrique Rivero Borrell "]
-            $scope.contenido4 = [];
-            $scope.contenido5 = [];
+            $scope.contenido4 = ["FC- Ciencias- Ricardo Monges López"];
+            $scope.contenido5 = ["FCA- Contaduría Jorge C. Bolio Castellanos"];
             $scope.contenido6 = [];
         }
     
@@ -71,6 +71,7 @@ angular.module('appController', [])
                 .success(function (data) {
                     $scope.alerts = [
             { type: 'success', msg: "Libro Añadido" }]; 
+                    $scope.formData.tem = "";
                     $scope.formData = {};
                     //$scope.libros = data;
 				    $scope.msj = "Libro guardado";
