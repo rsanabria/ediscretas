@@ -73,6 +73,7 @@ angular.module('appController', [])
                     $scope.alerts = [
             { type: 'success', msg: "Libro Añadido" }]; 
                     $scope.formData = {};
+                    $scope.formData.temas = [];
                     //$scope.libros = data;
 				    $scope.msj = "Libro guardado";
                 });
