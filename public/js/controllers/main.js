@@ -60,11 +60,11 @@ angular.module('appController', [])
         $scope.crearLibro = function () {
             
             temas  = $scope.formData.tema;
-            var tema = new String("");
+            var tema = new String(""); //se declara asi pro que hay problemas en el in
             temas = temas.split(" ");
             for (te in temas) {
                 $scope.formData.temas.push(temas[te]);
-		if (!(temas[te].split(".")[0] in tema))
+		if (!(temas[te].split(".")[0] in tema))     //este in
                 $scope.formData.tema = tema + " " +temas[te].split(".")[0];
             }
 		    if ($scope.formData)
