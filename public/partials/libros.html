@@ -61,8 +61,7 @@
               
             <tr>
                 <th>N</th>
-                <th  ng-click = "orderProp ='titulo' "><a>Titulo</a>
-                <th ng-click = "orderProp ='codigo' "><a>Código</a></th>                
+                <th  ng-click = "orderProp ='titulo' "><a>Titulo</a>             
               <th ng-click = "orderProp ='autor' "><a>Autor</a></th>
                 <th ng-click = "orderProp ='editorial' "><a>Editorial</a></th>
                 <th>Temas</th>
@@ -73,7 +72,6 @@
                 <tr ng-repeat="libro in libros | orderBy:orderProp" >
                 <td>{{$index + 1}}</td>
                 <td>{{libro.titulo}}</td>
-                <td  style="color:#357EBD;">{{libro.codigo}}</td>
                 <td>{{libro.autor}}</td>
                 <td>{{libro.editorial}}</td>
                 <td ><i ng-repeat="t in libro.temas"><i ng-if="($index+1)%2 == 0">{{t}}&nbsp;&nbsp;</i><i ng-if="($index+1)%2 != 0" style="color:#A63652;">{{t}}&nbsp;&nbsp;</i><i ng-if="($index+1)%5==0"><br></i></i></td>
